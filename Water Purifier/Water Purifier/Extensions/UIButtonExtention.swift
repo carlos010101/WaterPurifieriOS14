@@ -11,7 +11,7 @@ extension UIButton {
     
     func round() {
         
-        layer.cornerRadius = bounds.height / 2.4
+        layer.cornerRadius = bounds.height / 2.0
         clipsToBounds = true
         
     }

@@ -16,13 +16,18 @@ class SelectProductVC: UIViewController {
     @IBOutlet weak var medioGarrafonButton: UIButton!
     @IBOutlet weak var botellaButton: UIButton!
     
+    //MARK: - Lyfe Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        roundButtons()
         textAnimated()
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        roundButtons()
     }
     
     //MARK: - Actions
@@ -39,9 +44,7 @@ class SelectProductVC: UIViewController {
         
     }
     
-    @IBAction func okButtonWasPressed(_ sender: UIButton) {
-        
-    }
+   
     
     //MARK: - Functions
     

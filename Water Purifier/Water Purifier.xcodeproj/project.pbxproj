@@ -17,6 +17,7 @@
 		0439447625A645D000299FDB /* Water_PurifierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439447525A645D000299FDB /* Water_PurifierUITests.swift */; };
 		045F3A0525A79C1900AF1DD8 /* UIButtonExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F3A0425A79C1900AF1DD8 /* UIButtonExtention.swift */; };
 		047D613B25A810B700E6FCAD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D613A25A810B700E6FCAD /* Constants.swift */; };
+		04BB966625A90029001657B5 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB966525A90029001657B5 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		0439447725A645D000299FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		045F3A0425A79C1900AF1DD8 /* UIButtonExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtention.swift; sourceTree = "<group>"; };
 		047D613A25A810B700E6FCAD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		04BB966525A90029001657B5 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +105,11 @@
 		0439445225A645CF00299FDB /* Water Purifier */ = {
 			isa = PBXGroup;
 			children = (
-				047D613925A810A100E6FCAD /* Constants */,
-				045F3A0325A79BF800AF1DD8 /* Extensions */,
 				0439445325A645CF00299FDB /* AppDelegate.swift */,
 				0439445525A645CF00299FDB /* SceneDelegate.swift */,
+				04BB966425A90016001657B5 /* Model */,
+				047D613925A810A100E6FCAD /* Constants */,
+				045F3A0325A79BF800AF1DD8 /* Extensions */,
 				045F39FB25A79BBE00AF1DD8 /* Controllers */,
 				045F3A0225A79BED00AF1DD8 /* Views */,
 				0439445C25A645D000299FDB /* Assets.xcassets */,
@@ -164,6 +167,14 @@
 				047D613A25A810B700E6FCAD /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		04BB966425A90016001657B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04BB966525A90029001657B5 /* Product.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +312,7 @@
 				0439445425A645CF00299FDB /* AppDelegate.swift in Sources */,
 				045F3A0525A79C1900AF1DD8 /* UIButtonExtention.swift in Sources */,
 				0439445625A645CF00299FDB /* SceneDelegate.swift in Sources */,
+				04BB966625A90029001657B5 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
