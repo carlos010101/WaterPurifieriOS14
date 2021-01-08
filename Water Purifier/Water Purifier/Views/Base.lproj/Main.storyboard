@@ -176,7 +176,9 @@
                         <viewLayoutGuide key="safeArea" id="abk-rI-5y6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="N3g-av-RJi"/>
+                    <navigationItem key="navigationItem" id="N3g-av-RJi">
+                        <barButtonItem key="backBarButtonItem" title="Regresar" id="lQ3-bW-uGt"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S76-rD-oxo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

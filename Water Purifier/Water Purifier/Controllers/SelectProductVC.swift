@@ -15,13 +15,13 @@ class SelectProductVC: UIViewController {
     @IBOutlet weak var garrafonCompletoButton: UIButton!
     @IBOutlet weak var medioGarrafonButton: UIButton!
     @IBOutlet weak var botellaButton: UIButton!
-    @IBOutlet weak var okButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         roundButtons()
+        textAnimated()
         
     }
     
@@ -50,6 +50,24 @@ class SelectProductVC: UIViewController {
         garrafonCompletoButton.round()
         medioGarrafonButton.round()
         botellaButton.round()
+        
+    }
+    
+    private func textAnimated() {
+        
+        selectProductLabel.text = ""
+        var charIndex = 0.0
+        let titleText = "Seleccione un producto 💧"
+        for letter in titleText {
+            
+            Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { (timer) in
+                
+                self.selectProductLabel.text?.append(letter)
+            }
+            
+            charIndex += 1
+            
+        }
         
     }
     
