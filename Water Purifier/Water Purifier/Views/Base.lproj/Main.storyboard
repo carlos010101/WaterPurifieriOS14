@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L2v-Ca-rMD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Purificadora-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SelectProductVC" customModule="Water_Purifier" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleccione un producto 💧" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzt-z9-EQc">
+                                <rect key="frame" x="12.5" y="108" width="389.5" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="zF5-Mf-yKj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="26"/>
+                                <color key="textColor" red="0.098483029138313832" green="0.089745077343122676" blue="0.75174599890000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="c7N-MB-cJi" userLabel="Products Stack">
+                                <rect key="frame" x="20" y="208" width="153" height="524"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Pqo-jk-ISq" userLabel="Garrafon Completo Stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="153" height="172"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="249" image="garrafon-completo" translatesAutoresizingMaskIntoConstraints="NO" id="Nic-iu-DDD">
+                                                <rect key="frame" x="0.0" y="0.0" width="153" height="152"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Nic-iu-DDD" secondAttribute="height" multiplier="1:1" constant="1" id="whh-14-gLg"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Garrafón completo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLI-NP-yBZ">
+                                                <rect key="frame" x="0.0" y="152" width="153" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="k5V-Lv-2zP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="upv-vF-hIE" userLabel="Medio Garrafon Stack">
+                                        <rect key="frame" x="0.0" y="175" width="153" height="173"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="249" image="medio-garrafon" translatesAutoresizingMaskIntoConstraints="NO" id="xyL-oC-zGd">
+                                                <rect key="frame" x="0.0" y="0.0" width="153" height="153"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="xyL-oC-zGd" secondAttribute="height" multiplier="1:1" id="FLF-12-6F9"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medio garrafón" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMS-V9-qKW">
+                                                <rect key="frame" x="0.0" y="153" width="153" height="20"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="buF-q6-dkx" userLabel="Botella Stack">
+                                        <rect key="frame" x="0.0" y="351" width="153" height="173"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="249" image="botella" translatesAutoresizingMaskIntoConstraints="NO" id="GUL-oF-azc">
+                                                <rect key="frame" x="0.0" y="0.0" width="153" height="153"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="GUL-oF-azc" secondAttribute="height" multiplier="1:1" id="Wnh-2r-tXf"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Botella" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RO3-bp-H0D">
+                                                <rect key="frame" x="0.0" y="153" width="153" height="20"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RO3-bp-H0D" firstAttribute="height" secondItem="kLI-NP-yBZ" secondAttribute="height" id="2aI-Ir-BU7"/>
+                                    <constraint firstItem="hMS-V9-qKW" firstAttribute="height" secondItem="kLI-NP-yBZ" secondAttribute="height" id="DEl-B0-KBY"/>
+                                    <constraint firstAttribute="height" constant="524" id="lin-Yj-82M"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TH9-87-wht">
+                                <rect key="frame" x="264" y="234" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="jWN-IY-4Zn"/>
+                                    <constraint firstAttribute="height" constant="100" id="tP6-DN-Qea"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="31"/>
+                                <state key="normal" title="$12">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="garrafonCompletoButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l6N-mW-BNf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2f-YS-qJN">
+                                <rect key="frame" x="264" y="409.5" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Iii-0D-5Xu"/>
+                                    <constraint firstAttribute="width" constant="100" id="hm2-jZ-RE5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="31"/>
+                                <state key="normal" title="$6">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="medioGarrafonButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CyS-Q1-8tE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCO-5U-hEX">
+                                <rect key="frame" x="264" y="585.5" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="B5o-0g-5F2"/>
+                                    <constraint firstAttribute="width" constant="100" id="ygU-du-6pg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="31"/>
+                                <state key="normal" title="$3">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="botellaButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AvE-Z3-FJT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y2f-YS-qJN" secondAttribute="trailing" constant="50" id="3wX-Yt-eo7"/>
+                            <constraint firstItem="y2f-YS-qJN" firstAttribute="centerY" secondItem="xyL-oC-zGd" secondAttribute="centerY" id="CPx-Tu-ogd"/>
+                            <constraint firstItem="zzt-z9-EQc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12.5" id="EcV-bi-ZBn"/>
+                            <constraint firstItem="zzt-z9-EQc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Ema-bn-Mbe"/>
+                            <constraint firstItem="PCO-5U-hEX" firstAttribute="centerY" secondItem="GUL-oF-azc" secondAttribute="centerY" id="JcQ-h4-Rsm"/>
+                            <constraint firstItem="TH9-87-wht" firstAttribute="centerY" secondItem="Nic-iu-DDD" secondAttribute="centerY" id="Me2-7O-YfD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TH9-87-wht" secondAttribute="trailing" constant="50" id="aql-JD-fJj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zzt-z9-EQc" secondAttribute="trailing" constant="12" id="cLM-1T-pcp"/>
+                            <constraint firstItem="c7N-MB-cJi" firstAttribute="top" secondItem="zzt-z9-EQc" secondAttribute="bottom" constant="30" id="j2Y-Dy-T17"/>
+                            <constraint firstItem="c7N-MB-cJi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jxt-CW-apA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PCO-5U-hEX" secondAttribute="trailing" constant="50" id="t4g-Vm-7me"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Purificadora" id="nFo-9T-Awl"/>
+                    <connections>
+                        <outlet property="botellaButton" destination="PCO-5U-hEX" id="nlJ-Ux-IJV"/>
+                        <outlet property="garrafonCompletoButton" destination="TH9-87-wht" id="JEX-71-kpb"/>
+                        <outlet property="medioGarrafonButton" destination="y2f-YS-qJN" id="Ocu-eP-X6y"/>
+                        <outlet property="selectProductLabel" destination="zzt-z9-EQc" id="ORr-vg-Rmp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="118.52678571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Gd-1j-Hao">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L2v-Ca-rMD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="naq-PO-GnO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.1572124362" green="0.46500980850000001" blue="0.75174599890000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JSz-wk-pGX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j5l-pe-2mx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="botella" width="700" height="700"/>
+        <image name="garrafon-completo" width="1000" height="1000"/>
+        <image name="medio-garrafon" width="1200" height="1200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
