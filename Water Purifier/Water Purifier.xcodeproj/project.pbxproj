@@ -16,6 +16,7 @@
 		0439446B25A645D000299FDB /* Water_PurifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439446A25A645D000299FDB /* Water_PurifierTests.swift */; };
 		0439447625A645D000299FDB /* Water_PurifierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439447525A645D000299FDB /* Water_PurifierUITests.swift */; };
 		045F3A0525A79C1900AF1DD8 /* UIButtonExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F3A0425A79C1900AF1DD8 /* UIButtonExtention.swift */; };
+		047D613B25A810B700E6FCAD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D613A25A810B700E6FCAD /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0439447525A645D000299FDB /* Water_PurifierUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Water_PurifierUITests.swift; sourceTree = "<group>"; };
 		0439447725A645D000299FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		045F3A0425A79C1900AF1DD8 /* UIButtonExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtention.swift; sourceTree = "<group>"; };
+		047D613A25A810B700E6FCAD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		0439445225A645CF00299FDB /* Water Purifier */ = {
 			isa = PBXGroup;
 			children = (
+				047D613925A810A100E6FCAD /* Constants */,
 				045F3A0325A79BF800AF1DD8 /* Extensions */,
 				0439445325A645CF00299FDB /* AppDelegate.swift */,
 				0439445525A645CF00299FDB /* SceneDelegate.swift */,
@@ -153,6 +156,14 @@
 				045F3A0425A79C1900AF1DD8 /* UIButtonExtention.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		047D613925A810A100E6FCAD /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				047D613A25A810B700E6FCAD /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047D613B25A810B700E6FCAD /* Constants.swift in Sources */,
 				0439445825A645CF00299FDB /* SelectProductVC.swift in Sources */,
 				0439445425A645CF00299FDB /* AppDelegate.swift in Sources */,
 				045F3A0525A79C1900AF1DD8 /* UIButtonExtention.swift in Sources */,

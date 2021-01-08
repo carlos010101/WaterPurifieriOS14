@@ -102,6 +102,7 @@
                                 </state>
                                 <connections>
                                     <action selector="garrafonCompletoButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l6N-mW-BNf"/>
+                                    <segue destination="2Qp-UY-gRR" kind="show" identifier="garrafonCompletoSegue" id="NC6-aR-tx6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2f-YS-qJN">
@@ -117,6 +118,7 @@
                                 </state>
                                 <connections>
                                     <action selector="medioGarrafonButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CyS-Q1-8tE"/>
+                                    <segue destination="2Qp-UY-gRR" kind="show" identifier="medioGarrafonSegue" id="BCp-Zo-Uf1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCO-5U-hEX">
@@ -132,6 +134,7 @@
                                 </state>
                                 <connections>
                                     <action selector="botellaButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AvE-Z3-FJT"/>
+                                    <segue destination="2Qp-UY-gRR" kind="show" identifier="botellaSegue" id="Eys-tr-tq1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -163,6 +166,22 @@
             </objects>
             <point key="canvasLocation" x="1050.7246376811595" y="118.52678571428571"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Zd3-Ba-obR">
+            <objects>
+                <viewController id="2Qp-UY-gRR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JRQ-bH-N7r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="abk-rI-5y6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="N3g-av-RJi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S76-rD-oxo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1996" y="119"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Gd-1j-Hao">
             <objects>
@@ -183,6 +202,9 @@
             <point key="canvasLocation" x="140.57971014492756" y="118.52678571428571"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Eys-tr-tq1"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="botella" width="700" height="700"/>
         <image name="garrafon-completo" width="1000" height="1000"/>
