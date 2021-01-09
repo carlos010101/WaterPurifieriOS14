@@ -169,10 +169,10 @@
             </objects>
             <point key="canvasLocation" x="1050.7246376811595" y="118.52678571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--PaymentVC-->
         <scene sceneID="Zd3-Ba-obR">
             <objects>
-                <viewController id="2Qp-UY-gRR" sceneMemberID="viewController">
+                <viewController id="2Qp-UY-gRR" customClass="PaymentVC" customModule="Water_Purifier" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JRQ-bH-N7r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,14 +186,14 @@
                                 <color key="textColor" red="0.098483029139999997" green="0.089745077340000007" blue="0.75174599890000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M9h-DJ-ZDC">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="botella" translatesAutoresizingMaskIntoConstraints="NO" id="M9h-DJ-ZDC">
                                 <rect key="frame" x="157" y="218" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="6pF-5D-0ly"/>
                                     <constraint firstAttribute="width" constant="100" id="954-TH-BZ0"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyj-AE-dRk">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyj-AE-dRk">
                                 <rect key="frame" x="0.0" y="812" width="414" height="50"/>
                                 <color key="backgroundColor" red="0.1572124362" green="0.46500980850000001" blue="0.75174599890000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -203,6 +203,9 @@
                                 <state key="normal" title="SIGUIENTE">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextButtonWasPressed:" destination="2Qp-UY-gRR" eventType="touchUpInside" id="xgg-6Y-LkM"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="esD-EU-52f">
                                 <rect key="frame" x="74" y="350" width="266" height="300"/>
@@ -293,6 +296,12 @@
                     <navigationItem key="navigationItem" id="N3g-av-RJi">
                         <barButtonItem key="backBarButtonItem" title="Regresar" id="lQ3-bW-uGt"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nextButton" destination="hyj-AE-dRk" id="PGG-3h-LCN"/>
+                        <outlet property="productImage" destination="M9h-DJ-ZDC" id="JdP-MZ-Vew"/>
+                        <outlet property="productNameLabel" destination="seO-Fk-Jcx" id="ZIZ-9P-Rvm"/>
+                        <outlet property="productPriceLabel" destination="vWt-sp-gJw" id="mIV-Zw-rDV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S76-rD-oxo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

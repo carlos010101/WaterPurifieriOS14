@@ -16,6 +16,11 @@ class SelectProductVC: UIViewController {
     @IBOutlet weak var medioGarrafonButton: UIButton!
     @IBOutlet weak var botellaButton: UIButton!
     
+    
+    //MARK: - Variables
+    
+    private var product : Product?
+    
     //MARK: - Lyfe Cycle
     
     override func viewDidLoad() {
@@ -30,17 +35,43 @@ class SelectProductVC: UIViewController {
         roundButtons()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let paymentVC = segue.destination as? PaymentVC {
+            
+            paymentVC.initProduct(with: product)
+            
+        }
+    }
+    
     //MARK: - Actions
     
     @IBAction func garrafonCompletoButtonWasPressed(_ sender: UIButton) {
+
+        var garrafonProduct = Product()
+        garrafonProduct.productCost = 12.00
+        garrafonProduct.productImage = UIImage(named: "garrafon-completo")!
+        garrafonProduct.productName = "Garrafón completo"
+        self.product = garrafonProduct
         
     }
     
     @IBAction func medioGarrafonButtonWasPressed(_ sender: UIButton) {
         
+        var medioProduct = Product()
+        medioProduct.productCost = 6.00
+        medioProduct.productImage = UIImage(named: "medio-garrafon")!
+        medioProduct.productName = "Medio garrafón"
+        self.product = medioProduct
+        
     }
     
     @IBAction func botellaButtonWasPressed(_ sender: UIButton) {
+        
+        var botellaProduct = Product()
+        botellaProduct.productName = "Botella"
+        botellaProduct.productImage = UIImage(named: "botella")!
+        botellaProduct.productCost = 3.00
+        self.product = botellaProduct
         
     }
     
@@ -74,9 +105,5 @@ class SelectProductVC: UIViewController {
         
     }
     
-    
-    
-
-
 }
 

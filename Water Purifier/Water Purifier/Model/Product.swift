@@ -9,8 +9,8 @@ import UIKit
 
 struct Product {
     
-    public private (set) var productName : String
-    public private (set) var productImage : UIImage
-    public private (set) var productCost : Double
+    public var productName : String = ""
+    public var productImage : UIImage = UIImage(named: "botella")!
+    public var productCost : Double = 6.00
     
 }
