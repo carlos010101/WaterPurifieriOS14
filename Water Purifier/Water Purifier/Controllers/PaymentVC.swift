@@ -25,6 +25,7 @@ class PaymentVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addColorToNextButton()
+        navigationItem.backBarButtonItem?.title = "Regresar"
     }
     
     override func viewWillAppear(_ animated: Bool) {

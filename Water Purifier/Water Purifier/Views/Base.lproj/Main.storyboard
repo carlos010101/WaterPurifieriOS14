@@ -259,7 +259,7 @@
                                                                 <color key="textColor" red="0.098483029139999997" green="0.089745077340000007" blue="0.75174599890000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbN-tG-i2g">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbN-tG-i2g">
                                                                 <rect key="frame" x="0.0" y="75" width="133" height="75"/>
                                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                                                 <nil key="textColor"/>
@@ -276,6 +276,31 @@
                                     <constraint firstAttribute="height" constant="300" id="zI9-gQ-KfS"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="7zD-4K-ZJS">
+                                <rect key="frame" x="82" y="702" width="250" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8a-ss-IX5">
+                                        <rect key="frame" x="0.0" y="0.0" width="57.5" height="70"/>
+                                        <state key="normal" title="10 Pesos" image="10pesos"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLp-rt-aWr">
+                                        <rect key="frame" x="64.5" y="0.0" width="57" height="70"/>
+                                        <state key="normal" title="Button" image="5pesos"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kS-Q0-cg3">
+                                        <rect key="frame" x="128.5" y="0.0" width="57.5" height="70"/>
+                                        <state key="normal" title="Button" image="2pesos"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZc-TJ-hjk">
+                                        <rect key="frame" x="193" y="0.0" width="57" height="70"/>
+                                        <state key="normal" title="Button" image="1peso"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="HFw-3V-B6m"/>
+                                    <constraint firstAttribute="width" constant="250" id="rSk-Fx-Iop"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="abk-rI-5y6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -284,18 +309,20 @@
                             <constraint firstItem="abk-rI-5y6" firstAttribute="trailing" secondItem="hyj-AE-dRk" secondAttribute="trailing" id="9zs-nE-V05"/>
                             <constraint firstItem="seO-Fk-Jcx" firstAttribute="leading" secondItem="abk-rI-5y6" secondAttribute="leading" constant="12" id="CbG-7I-plb"/>
                             <constraint firstItem="hyj-AE-dRk" firstAttribute="leading" secondItem="abk-rI-5y6" secondAttribute="leading" id="Ffh-Sl-pak"/>
+                            <constraint firstItem="abk-rI-5y6" firstAttribute="trailing" secondItem="7zD-4K-ZJS" secondAttribute="trailing" constant="82" id="Jne-Bg-D8O"/>
+                            <constraint firstItem="7zD-4K-ZJS" firstAttribute="leading" secondItem="abk-rI-5y6" secondAttribute="leading" constant="82" id="PYQ-JY-Fzv"/>
                             <constraint firstItem="abk-rI-5y6" firstAttribute="trailing" secondItem="esD-EU-52f" secondAttribute="trailing" constant="74" id="PcH-6d-7oA"/>
                             <constraint firstItem="M9h-DJ-ZDC" firstAttribute="top" secondItem="seO-Fk-Jcx" secondAttribute="bottom" constant="40" id="Y2x-QL-xnc"/>
                             <constraint firstItem="abk-rI-5y6" firstAttribute="bottom" secondItem="hyj-AE-dRk" secondAttribute="bottom" id="ey8-xz-WaC"/>
                             <constraint firstItem="esD-EU-52f" firstAttribute="leading" secondItem="abk-rI-5y6" secondAttribute="leading" constant="74" id="nwB-su-v8H"/>
                             <constraint firstItem="esD-EU-52f" firstAttribute="top" secondItem="M9h-DJ-ZDC" secondAttribute="bottom" constant="32" id="ofD-9d-KU6"/>
                             <constraint firstItem="seO-Fk-Jcx" firstAttribute="top" secondItem="abk-rI-5y6" secondAttribute="top" constant="20" id="qOV-Ly-C0u"/>
+                            <constraint firstItem="7zD-4K-ZJS" firstAttribute="centerX" secondItem="JRQ-bH-N7r" secondAttribute="centerX" id="vHy-gK-Bot"/>
+                            <constraint firstItem="7zD-4K-ZJS" firstAttribute="top" secondItem="esD-EU-52f" secondAttribute="bottom" constant="52" id="wyJ-Rg-BqS"/>
                             <constraint firstItem="M9h-DJ-ZDC" firstAttribute="centerX" secondItem="JRQ-bH-N7r" secondAttribute="centerX" id="xZI-jD-Ags"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="N3g-av-RJi">
-                        <barButtonItem key="backBarButtonItem" title="Regresar" id="lQ3-bW-uGt"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="N3g-av-RJi"/>
                     <connections>
                         <outlet property="nextButton" destination="hyj-AE-dRk" id="PGG-3h-LCN"/>
                         <outlet property="productImage" destination="M9h-DJ-ZDC" id="JdP-MZ-Vew"/>
@@ -331,6 +358,10 @@
         <segue reference="Eys-tr-tq1"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="10pesos" width="512" height="512"/>
+        <image name="1peso" width="1024" height="1024"/>
+        <image name="2pesos" width="512" height="512"/>
+        <image name="5pesos" width="512" height="512"/>
         <image name="botella" width="700" height="700"/>
         <image name="garrafon-completo" width="1000" height="1000"/>
         <image name="medio-garrafon" width="1200" height="1200"/>
