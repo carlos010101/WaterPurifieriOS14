@@ -25,7 +25,7 @@ class SelectProductVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.tabBarItem.title = "Purificadora"
         textAnimated()
         
     }
@@ -75,7 +75,6 @@ class SelectProductVC: UIViewController {
         
     }
     
-   
     
     //MARK: - Functions
     

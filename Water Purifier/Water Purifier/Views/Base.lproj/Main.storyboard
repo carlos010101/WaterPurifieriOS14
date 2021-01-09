@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Purificadora-->
+        <!--Select ProductVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SelectProductVC" customModule="Water_Purifier" customModuleProvider="target" sceneMemberID="viewController">
@@ -157,7 +157,7 @@
                             <constraint firstItem="TH9-87-wht" firstAttribute="top" secondItem="zzt-z9-EQc" secondAttribute="bottom" constant="56" id="wMm-rc-waF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Purificadora" id="nFo-9T-Awl"/>
+                    <navigationItem key="navigationItem" id="nFo-9T-Awl"/>
                     <connections>
                         <outlet property="botellaButton" destination="PCO-5U-hEX" id="nlJ-Ux-IJV"/>
                         <outlet property="garrafonCompletoButton" destination="TH9-87-wht" id="JEX-71-kpb"/>
@@ -282,18 +282,30 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8a-ss-IX5">
                                         <rect key="frame" x="0.0" y="0.0" width="57.5" height="70"/>
                                         <state key="normal" title="10 Pesos" image="10pesos"/>
+                                        <connections>
+                                            <action selector="tenPesosCoinWasPressed:" destination="2Qp-UY-gRR" eventType="touchUpInside" id="ZtL-wA-4aB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLp-rt-aWr">
                                         <rect key="frame" x="64.5" y="0.0" width="57" height="70"/>
                                         <state key="normal" title="Button" image="5pesos"/>
+                                        <connections>
+                                            <action selector="fivePesosCoinWasPressed:" destination="2Qp-UY-gRR" eventType="touchUpInside" id="pbJ-rZ-gmh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kS-Q0-cg3">
                                         <rect key="frame" x="128.5" y="0.0" width="57.5" height="70"/>
                                         <state key="normal" title="Button" image="2pesos"/>
+                                        <connections>
+                                            <action selector="twoPesosCoinWasPressed:" destination="2Qp-UY-gRR" eventType="touchUpInside" id="R6F-Q2-Oaa"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZc-TJ-hjk">
                                         <rect key="frame" x="193" y="0.0" width="57" height="70"/>
                                         <state key="normal" title="Button" image="1peso"/>
+                                        <connections>
+                                            <action selector="onePesoCoinWasPressed:" destination="2Qp-UY-gRR" eventType="touchUpInside" id="G8B-Qg-a4K"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -322,8 +334,12 @@
                             <constraint firstItem="M9h-DJ-ZDC" firstAttribute="centerX" secondItem="JRQ-bH-N7r" secondAttribute="centerX" id="xZI-jD-Ags"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="N3g-av-RJi"/>
+                    <navigationItem key="navigationItem" id="N3g-av-RJi">
+                        <barButtonItem key="backBarButtonItem" title="Regresar" id="L3Z-T7-qxf"/>
+                    </navigationItem>
                     <connections>
+                        <outlet property="changeLabel" destination="qbN-tG-i2g" id="Xj5-ht-y0D"/>
+                        <outlet property="creditsLabel" destination="HIm-kg-HQe" id="kH5-TV-DqI"/>
                         <outlet property="nextButton" destination="hyj-AE-dRk" id="PGG-3h-LCN"/>
                         <outlet property="productImage" destination="M9h-DJ-ZDC" id="JdP-MZ-Vew"/>
                         <outlet property="productNameLabel" destination="seO-Fk-Jcx" id="ZIZ-9P-Rvm"/>
