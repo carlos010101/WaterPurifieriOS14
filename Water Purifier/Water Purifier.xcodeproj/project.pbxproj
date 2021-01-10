@@ -16,6 +16,7 @@
 		0439446B25A645D000299FDB /* Water_PurifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439446A25A645D000299FDB /* Water_PurifierTests.swift */; };
 		0439447625A645D000299FDB /* Water_PurifierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439447525A645D000299FDB /* Water_PurifierUITests.swift */; };
 		045F3A0525A79C1900AF1DD8 /* UIButtonExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F3A0425A79C1900AF1DD8 /* UIButtonExtention.swift */; };
+		046E015825AB69AA004132EA /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046E015725AB69AA004132EA /* ProductManager.swift */; };
 		047D613B25A810B700E6FCAD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D613A25A810B700E6FCAD /* Constants.swift */; };
 		04BB966625A90029001657B5 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB966525A90029001657B5 /* Product.swift */; };
 		04BB966B25A9062E001657B5 /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB966A25A9062E001657B5 /* PaymentVC.swift */; };
@@ -54,6 +55,7 @@
 		0439447525A645D000299FDB /* Water_PurifierUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Water_PurifierUITests.swift; sourceTree = "<group>"; };
 		0439447725A645D000299FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		045F3A0425A79C1900AF1DD8 /* UIButtonExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtention.swift; sourceTree = "<group>"; };
+		046E015725AB69AA004132EA /* ProductManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
 		047D613A25A810B700E6FCAD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		04BB966525A90029001657B5 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		04BB966A25A9062E001657B5 /* PaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				04BB966525A90029001657B5 /* Product.swift */,
+				046E015725AB69AA004132EA /* ProductManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				047D613B25A810B700E6FCAD /* Constants.swift in Sources */,
 				0439445825A645CF00299FDB /* SelectProductVC.swift in Sources */,
 				0439445425A645CF00299FDB /* AppDelegate.swift in Sources */,
+				046E015825AB69AA004132EA /* ProductManager.swift in Sources */,
 				045F3A0525A79C1900AF1DD8 /* UIButtonExtention.swift in Sources */,
 				0439445625A645CF00299FDB /* SceneDelegate.swift in Sources */,
 				04BB966B25A9062E001657B5 /* PaymentVC.swift in Sources */,

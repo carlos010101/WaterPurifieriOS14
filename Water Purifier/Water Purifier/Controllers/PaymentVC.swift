@@ -20,7 +20,8 @@ class PaymentVC: UIViewController {
     
     //MARK: - Variables
     
-    var product : Product?
+    private var product : Product?
+    private var productManager = ProductManager()
     
     //MARK: - Lyfe Cycle
     
@@ -40,21 +41,37 @@ class PaymentVC: UIViewController {
     
     @IBAction func nextButtonWasPressed(_ sender: UIButton) {
         
+        print("Pago completado")
     }
     
     @IBAction func tenPesosCoinWasPressed(_ sender: UIButton) {
         
+        changeLabel.text = "$\(productManager.addCreditsAndCalculateChange(amount: 10))0"
+        creditsLabel.text = "$\(productManager.credits)0"
+        nextButton.isEnabled = productManager.changeProductStatus()
+        addColorToNextButton()
+        
     }
     
     @IBAction func fivePesosCoinWasPressed(_ sender: UIButton) {
+        changeLabel.text = "$\(productManager.addCreditsAndCalculateChange(amount: 5))0"
+        creditsLabel.text = "$\(productManager.credits)0"
+        nextButton.isEnabled = productManager.changeProductStatus()
+        addColorToNextButton()
     }
     
     @IBAction func twoPesosCoinWasPressed(_ sender: UIButton) {
-        
+        changeLabel.text = "$\(productManager.addCreditsAndCalculateChange(amount: 2))0"
+        creditsLabel.text = "$\(productManager.credits)0"
+        nextButton.isEnabled = productManager.changeProductStatus()
+        addColorToNextButton()
     }
     
     @IBAction func onePesoCoinWasPressed(_ sender: UIButton) {
-        
+        changeLabel.text = "$\(productManager.addCreditsAndCalculateChange(amount: 1))0"
+        creditsLabel.text = "$\(productManager.credits)0"
+        nextButton.isEnabled = productManager.changeProductStatus()
+        addColorToNextButton()
     }
     
     
@@ -62,7 +79,12 @@ class PaymentVC: UIViewController {
     
     public func initProduct(with product : Product?) {
         
-        self.product = product
+        if let selectedProduct = product {
+            
+            self.product = selectedProduct
+            self.productManager.productPrice = selectedProduct.productCost
+            
+        }
                 
     }
     
