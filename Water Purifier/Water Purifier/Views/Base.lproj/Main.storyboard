@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Select ProductVC-->
+        <!--Prificadoea-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SelectProductVC" customModule="Water_Purifier" customModuleProvider="target" sceneMemberID="viewController">
@@ -157,7 +157,9 @@
                             <constraint firstItem="TH9-87-wht" firstAttribute="top" secondItem="zzt-z9-EQc" secondAttribute="bottom" constant="56" id="wMm-rc-waF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="nFo-9T-Awl"/>
+                    <navigationItem key="navigationItem" title="Prificadoea" id="nFo-9T-Awl">
+                        <barButtonItem key="backBarButtonItem" title="Regresar" id="qVI-oP-2CZ"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="botellaButton" destination="PCO-5U-hEX" id="nlJ-Ux-IJV"/>
                         <outlet property="garrafonCompletoButton" destination="TH9-87-wht" id="JEX-71-kpb"/>
@@ -169,7 +171,7 @@
             </objects>
             <point key="canvasLocation" x="1050.7246376811595" y="118.52678571428571"/>
         </scene>
-        <!--PaymentVC-->
+        <!--Pago-->
         <scene sceneID="Zd3-Ba-obR">
             <objects>
                 <viewController id="2Qp-UY-gRR" customClass="PaymentVC" customModule="Water_Purifier" customModuleProvider="target" sceneMemberID="viewController">
@@ -334,7 +336,7 @@
                             <constraint firstItem="M9h-DJ-ZDC" firstAttribute="centerX" secondItem="JRQ-bH-N7r" secondAttribute="centerX" id="xZI-jD-Ags"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="N3g-av-RJi">
+                    <navigationItem key="navigationItem" title="Pago" id="N3g-av-RJi">
                         <barButtonItem key="backBarButtonItem" title="Regresar" id="L3Z-T7-qxf"/>
                     </navigationItem>
                     <connections>
@@ -344,11 +346,45 @@
                         <outlet property="productImage" destination="M9h-DJ-ZDC" id="JdP-MZ-Vew"/>
                         <outlet property="productNameLabel" destination="seO-Fk-Jcx" id="ZIZ-9P-Rvm"/>
                         <outlet property="productPriceLabel" destination="vWt-sp-gJw" id="mIV-Zw-rDV"/>
+                        <segue destination="hNv-pN-0kK" kind="show" id="Wg4-fZ-I3L"/>
+                        <segue destination="C5K-Wq-48w" kind="show" id="1RS-U4-7JK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S76-rD-oxo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1995.6521739130437" y="118.52678571428571"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HQY-YS-i8k">
+            <objects>
+                <viewController id="hNv-pN-0kK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Npc-X1-xM6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="alJ-a6-yAM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CkW-5R-a6i"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S6R-LH-ww0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3329" y="-263"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="m52-so-RE2">
+            <objects>
+                <viewController id="C5K-Wq-48w" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yXt-Rz-opG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="WJn-bc-w29"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dGK-9c-9JV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1QK-J8-wQl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4671" y="119"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Gd-1j-Hao">

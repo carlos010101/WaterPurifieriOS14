@@ -52,6 +52,7 @@ class SelectProductVC: UIViewController {
         garrafonProduct.productImage = UIImage(named: "garrafon-completo")!
         garrafonProduct.productName = "Garrafón completo"
         self.product = garrafonProduct
+        sender.shine()
         
     }
     
@@ -62,6 +63,7 @@ class SelectProductVC: UIViewController {
         medioProduct.productImage = UIImage(named: "medio-garrafon")!
         medioProduct.productName = "Medio garrafón"
         self.product = medioProduct
+        sender.shine()
         
     }
     
@@ -72,6 +74,7 @@ class SelectProductVC: UIViewController {
         botellaProduct.productImage = UIImage(named: "botella")!
         botellaProduct.productCost = 3.00
         self.product = botellaProduct
+        sender.shine()
         
     }
     
