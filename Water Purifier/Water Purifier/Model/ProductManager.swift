@@ -18,7 +18,7 @@ struct ProductManager {
     
     //MARK: - Methods
     
-    mutating func addCreditsAndCalculateChange(amount : Double) -> Double {
+    mutating func addCreditsAndCalculateChange(_ amount : Double) -> Double {
         
         credits += amount
         calculateChange()

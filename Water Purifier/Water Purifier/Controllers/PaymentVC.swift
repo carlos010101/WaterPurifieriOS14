@@ -32,7 +32,7 @@ class PaymentVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        updateViewWithProductInfo(product: product)
+        initViewWithProductInfo(product: product)
         navigationItem.backBarButtonItem?.title = "Regresar"
     }
     
@@ -45,33 +45,20 @@ class PaymentVC: UIViewController {
     }
     
     @IBAction func tenPesosCoinWasPressed(_ sender: UIButton) {
-        
-        changeLabel.text = "$\(productManager.addCreditsAndCalculateChange(amount: 10))0"
-        creditsLabel.text = "$\(productManager.credits)0"
-        nextButton.isEnabled = productManager.changeProductStatus()
-        addColorToNextButton()
-        
+        updateViewWithProductInfo(amount: 10)
     }
     
     @IBAction func fivePesosCoinWasPressed(_ sender: UIButton) {
-        changeLabel.text = "$\(productManager.addCreditsAndCalculateChange(amount: 5))0"
-        creditsLabel.text = "$\(productManager.credits)0"
-        nextButton.isEnabled = productManager.changeProductStatus()
-        addColorToNextButton()
+        updateViewWithProductInfo(amount: 5)
     }
     
     @IBAction func twoPesosCoinWasPressed(_ sender: UIButton) {
-        changeLabel.text = "$\(productManager.addCreditsAndCalculateChange(amount: 2))0"
-        creditsLabel.text = "$\(productManager.credits)0"
-        nextButton.isEnabled = productManager.changeProductStatus()
-        addColorToNextButton()
+        updateViewWithProductInfo(amount: 2)
     }
     
     @IBAction func onePesoCoinWasPressed(_ sender: UIButton) {
-        changeLabel.text = "$\(productManager.addCreditsAndCalculateChange(amount: 1))0"
-        creditsLabel.text = "$\(productManager.credits)0"
-        nextButton.isEnabled = productManager.changeProductStatus()
-        addColorToNextButton()
+
+        updateViewWithProductInfo(amount: 1)
     }
     
     
@@ -79,16 +66,13 @@ class PaymentVC: UIViewController {
     
     public func initProduct(with product : Product?) {
         
-        if let selectedProduct = product {
+        guard let selectedProduct = product else { return }
             
             self.product = selectedProduct
             self.productManager.productPrice = selectedProduct.productCost
-            
-        }
-                
     }
     
-    private func updateViewWithProductInfo(product : Product?) {
+    private func initViewWithProductInfo(product : Product?) {
         
         guard let selectedProduct = product else { return }
         
@@ -96,6 +80,15 @@ class PaymentVC: UIViewController {
             productImage.image = selectedProduct.productImage
             productPriceLabel.text = "$\(selectedProduct.productCost)0"
                     
+    }
+    
+    private func updateViewWithProductInfo(amount : Double) {
+        
+        changeLabel.text = "$\(productManager.addCreditsAndCalculateChange(amount))0"
+        creditsLabel.text = "$\(productManager.credits)0"
+        nextButton.isEnabled = productManager.changeProductStatus()
+        addColorToNextButton()
+        
     }
     
     private func addColorToNextButton() {

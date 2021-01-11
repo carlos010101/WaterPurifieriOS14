@@ -206,7 +206,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextButtonWasPressed:" destination="2Qp-UY-gRR" eventType="touchUpInside" id="xgg-6Y-LkM"/>
+                                    <action selector="nextButtonWasPressed:" destination="2Qp-UY-gRR" eventType="touchUpInside" id="CtG-TO-Jnk"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="esD-EU-52f">
@@ -346,8 +346,8 @@
                         <outlet property="productImage" destination="M9h-DJ-ZDC" id="JdP-MZ-Vew"/>
                         <outlet property="productNameLabel" destination="seO-Fk-Jcx" id="ZIZ-9P-Rvm"/>
                         <outlet property="productPriceLabel" destination="vWt-sp-gJw" id="mIV-Zw-rDV"/>
-                        <segue destination="hNv-pN-0kK" kind="show" id="Wg4-fZ-I3L"/>
-                        <segue destination="C5K-Wq-48w" kind="show" id="1RS-U4-7JK"/>
+                        <segue destination="hNv-pN-0kK" kind="show" identifier="toClean" id="Wg4-fZ-I3L"/>
+                        <segue destination="C5K-Wq-48w" kind="show" identifier="toFill" id="1RS-U4-7JK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S76-rD-oxo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -361,14 +361,37 @@
                     <view key="view" contentMode="scaleToFill" id="Npc-X1-xM6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="zaw-NC-aJz">
+                                <rect key="frame" x="122" y="206" width="170" height="417.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TB-Yu-OEd">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5fH-Rv-uwB">
+                                        <rect key="frame" x="0.0" y="110.5" width="170" height="187"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxb-Cr-J61">
+                                        <rect key="frame" x="0.0" y="387.5" width="170" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="alJ-a6-yAM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="CkW-5R-a6i"/>
+                    <connections>
+                        <segue destination="C5K-Wq-48w" kind="show" id="iCg-is-J0z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S6R-LH-ww0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3329" y="-263"/>
+            <point key="canvasLocation" x="3328.985507246377" y="-263.16964285714283"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="m52-so-RE2">
@@ -407,6 +430,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="iCg-is-J0z"/>
         <segue reference="Eys-tr-tq1"/>
     </inferredMetricsTieBreakers>
     <resources>
