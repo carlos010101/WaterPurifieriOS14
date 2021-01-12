@@ -47,39 +47,31 @@ class SelectProductVC: UIViewController {
     
     @IBAction func garrafonCompletoButtonWasPressed(_ sender: UIButton) {
 
-        var garrafonProduct = Product()
-        garrafonProduct.productCost = 12.00
-        garrafonProduct.productImage = UIImage(named: "garrafon-completo")!
-        garrafonProduct.productName = "Garrafón completo"
-        self.product = garrafonProduct
-        sender.shine()
+        self.product = buyProduct(name: "Garrafón completo", image: UIImage(named: "garrafon-completo")!, cost: 12.00, type: .garrafonCompleto)
         
     }
     
     @IBAction func medioGarrafonButtonWasPressed(_ sender: UIButton) {
         
-        var medioProduct = Product()
-        medioProduct.productCost = 6.00
-        medioProduct.productImage = UIImage(named: "medio-garrafon")!
-        medioProduct.productName = "Medio garrafón"
-        self.product = medioProduct
-        sender.shine()
-        
+        self.product = buyProduct(name: "Medio garrafón", image: UIImage(named: "medio-garrafon")!, cost: 6.00, type: .medioGarrafon)
     }
     
     @IBAction func botellaButtonWasPressed(_ sender: UIButton) {
         
-        var botellaProduct = Product()
-        botellaProduct.productName = "Botella"
-        botellaProduct.productImage = UIImage(named: "botella")!
-        botellaProduct.productCost = 3.00
-        self.product = botellaProduct
-        sender.shine()
+        self.product = buyProduct(name: "Botella", image: UIImage(named: "botella")!, cost: 3.00, type: .botella)
         
     }
     
     
-    //MARK: - Functions
+    //MARK: - Methods
+    
+    func buyProduct(name : String, image : UIImage, cost : Double, type : ProductType) -> Product{
+        
+        let product = Product(productName: name, productImage: image, productCost: cost, productType: type)
+        
+        return product
+        
+    }
     
     private func roundButtons(){
         

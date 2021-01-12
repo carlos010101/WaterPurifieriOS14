@@ -354,39 +354,72 @@
             </objects>
             <point key="canvasLocation" x="1995.6521739130437" y="118.52678571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--CleanVC-->
         <scene sceneID="HQY-YS-i8k">
             <objects>
-                <viewController id="hNv-pN-0kK" sceneMemberID="viewController">
+                <viewController id="hNv-pN-0kK" customClass="CleanVC" customModule="Water_Purifier" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Npc-X1-xM6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="zaw-NC-aJz">
-                                <rect key="frame" x="122" y="206" width="170" height="417.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="iQF-2V-PaZ">
+                                <rect key="frame" x="0.0" y="172" width="414" height="109"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TB-Yu-OEd">
-                                        <rect key="frame" x="0.0" y="0.0" width="170" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voltee el envase para enguajarlo. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dN-vy-b9C">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="25"/>
+                                        <color key="textColor" red="0.098483029139999997" green="0.089745077340000007" blue="0.75174599890000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5fH-Rv-uwB">
-                                        <rect key="frame" x="0.0" y="110.5" width="170" height="187"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxb-Cr-J61">
-                                        <rect key="frame" x="0.0" y="387.5" width="170" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presione OK cuando esté listo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfO-Td-BmB">
+                                        <rect key="frame" x="0.0" y="74.5" width="414" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" red="0.098483029139999997" green="0.089745077340000007" blue="0.75174599890000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="3he-TW-SgR"/>
+                                </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garrafon-completo" translatesAutoresizingMaskIntoConstraints="NO" id="NSo-bE-cz0">
+                                <rect key="frame" x="131" y="327" width="152" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="wzC-SG-DzC"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WtV-iZ-LVq">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.2214289606" green="0.4825823903" blue="0.73074275259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="UkF-nw-AqJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="alJ-a6-yAM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="alJ-a6-yAM" firstAttribute="trailing" secondItem="NSo-bE-cz0" secondAttribute="trailing" constant="131" id="1ux-K7-kRf"/>
+                            <constraint firstItem="NSo-bE-cz0" firstAttribute="leading" secondItem="alJ-a6-yAM" secondAttribute="leading" constant="131" id="4G5-RG-bvN"/>
+                            <constraint firstItem="alJ-a6-yAM" firstAttribute="trailing" secondItem="iQF-2V-PaZ" secondAttribute="trailing" id="59N-GT-Yiz"/>
+                            <constraint firstItem="WtV-iZ-LVq" firstAttribute="leading" secondItem="alJ-a6-yAM" secondAttribute="leading" id="AzN-Nm-aij"/>
+                            <constraint firstItem="NSo-bE-cz0" firstAttribute="centerX" secondItem="Npc-X1-xM6" secondAttribute="centerX" id="O8g-HR-kwx"/>
+                            <constraint firstItem="iQF-2V-PaZ" firstAttribute="leading" secondItem="alJ-a6-yAM" secondAttribute="leading" id="Pv3-Vi-b9V"/>
+                            <constraint firstItem="iQF-2V-PaZ" firstAttribute="centerX" secondItem="Npc-X1-xM6" secondAttribute="centerX" id="SfG-La-fli"/>
+                            <constraint firstItem="alJ-a6-yAM" firstAttribute="bottom" secondItem="WtV-iZ-LVq" secondAttribute="bottom" id="TFg-Gd-0o7"/>
+                            <constraint firstItem="NSo-bE-cz0" firstAttribute="top" secondItem="iQF-2V-PaZ" secondAttribute="bottom" constant="46" id="e78-ka-BDi"/>
+                            <constraint firstItem="NSo-bE-cz0" firstAttribute="top" secondItem="Npc-X1-xM6" secondAttribute="top" constant="327" id="fBS-sR-Dqw"/>
+                            <constraint firstItem="alJ-a6-yAM" firstAttribute="trailing" secondItem="WtV-iZ-LVq" secondAttribute="trailing" id="kVO-K2-dww"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CkW-5R-a6i"/>
                     <connections>
-                        <segue destination="C5K-Wq-48w" kind="show" id="iCg-is-J0z"/>
+                        <outlet property="productImage" destination="NSo-bE-cz0" id="aFr-UI-Fyq"/>
+                        <segue destination="C5K-Wq-48w" kind="show" identifier="toFillFromClean" id="iCg-is-J0z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S6R-LH-ww0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

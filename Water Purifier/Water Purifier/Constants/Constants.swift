@@ -7,18 +7,28 @@
 
 import Foundation
 
-//Segues
-let garrafonCompletoSegue = "garrafonCompletoSegue"
-let medioGarrafonSegue = "medioGarrafonSegue"
-let botellaSegue = "botellaSegue"
+struct K {
+    
+    struct Segues {
+        //Segues
+        static let garrafonCompletoSegue = "garrafonCompletoSegue"
+        static let medioGarrafonSegue = "medioGarrafonSegue"
+        static let botellaSegue = "botellaSegue"
+        static let toCleanSegue = "toClean"
 
-//Imagénes
-let garrafonCompletoImage = "garrafon-completo"
-let medioGarrafonImage = "medio-garrafon"
-let botellaImage = "botella"
-let moneda10PesosImage = "10pesos"
-let moneda5PesosImage = "5pesos"
-let moneda2PesosImage = "2pesos"
-let monada1PesoImage = "1peso"
+    }
+    
+    struct Images {
+        //Imagénes
+        static let garrafonCompletoImage = "garrafon-completo"
+        static let medioGarrafonImage = "medio-garrafon"
+        static let botellaImage = "botella"
+        static let moneda10PesosImage = "10pesos"
+        static let moneda5PesosImage = "5pesos"
+        static let moneda2PesosImage = "2pesos"
+        static let monada1PesoImage = "1peso"
 
+    }
+    
+}
 

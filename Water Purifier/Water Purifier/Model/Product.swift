@@ -14,6 +14,7 @@ struct Product {
     public var productName : String = ""
     public var productImage : UIImage = UIImage(named: "botella")!
     public var productCost : Double = 0.00
+    public var productType : ProductType 
     
     public var timeToFill : Double {
         

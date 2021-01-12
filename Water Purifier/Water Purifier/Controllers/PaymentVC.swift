@@ -36,12 +36,31 @@ class PaymentVC: UIViewController {
         navigationItem.backBarButtonItem?.title = "Regresar"
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.isNavigationBarHidden = true
+    }
+    
     
     //MARK: - Actions
     
     @IBAction func nextButtonWasPressed(_ sender: UIButton) {
         
-        print("Pago completado")
+        switch self.product?.productType {
+        
+        case .garrafonCompleto:
+            
+            performSegue(withIdentifier: K.Segues.toCleanSegue, sender: self)
+            
+        case .medioGarrafon :
+            
+            performSegue(withIdentifier: K.Segues.toCleanSegue, sender: self)
+        
+        default:
+            
+            print("Break")
+            break
+        }
     }
     
     @IBAction func tenPesosCoinWasPressed(_ sender: UIButton) {
@@ -57,7 +76,6 @@ class PaymentVC: UIViewController {
     }
     
     @IBAction func onePesoCoinWasPressed(_ sender: UIButton) {
-
         updateViewWithProductInfo(amount: 1)
     }
     
@@ -79,7 +97,7 @@ class PaymentVC: UIViewController {
             productNameLabel.text = "\(selectedProduct.productName)"
             productImage.image = selectedProduct.productImage
             productPriceLabel.text = "$\(selectedProduct.productCost)0"
-                    
+                
     }
     
     private func updateViewWithProductInfo(amount : Double) {
@@ -103,5 +121,17 @@ class PaymentVC: UIViewController {
         }
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let cleanVC = segue.destination as? CleanVC {
+            
+            cleanVC.initProduct(product: self.product)
+            
+        }
+        
+    }
+    
+    
     
 }
