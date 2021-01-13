@@ -55,10 +55,14 @@ class PaymentVC: UIViewController {
         case .medioGarrafon :
             
             performSegue(withIdentifier: K.Segues.toCleanSegue, sender: self)
+            
+        case .botella :
+            
+            performSegue(withIdentifier: K.Segues.toFillSegue, sender: self)
         
         default:
             
-            print("Break")
+            fatalError("No product selected")
             break
         }
     }

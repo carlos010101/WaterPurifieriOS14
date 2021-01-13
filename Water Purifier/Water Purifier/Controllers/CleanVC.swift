@@ -26,17 +26,43 @@ class CleanVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.productImage.image = product?.productImage
-        self.productImage.transform = CGAffineTransform(rotationAngle: (180.0 * .pi) / 180.0)
+        flipImage(product: product)
+
     }
+    
+    
+    @IBAction func okButtonWasPressed(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: K.Segues.toFillFromCleanSegue, sender: self)
+        
+    }
+    
     
     //MARK: - Methods
     
-    func initProduct(product : Product?) {
+    public func initProduct(product : Product?) {
         
         guard let selectedProduct = product else { return }
         
         self.product = selectedProduct
+        
+    }
+    
+    public func flipImage (product : Product?) {
+        
+        guard let selectedProduct = product else { return }
+        
+        self.productImage.image = selectedProduct.productImage
+        self.productImage.transform = CGAffineTransform(rotationAngle: (180.0 * .pi) / 180.0)
+        
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard let prepareVC = segue.destination as? PrepareVC else { return }
+        
+        prepareVC.initProduct(product: product)
         
     }
     

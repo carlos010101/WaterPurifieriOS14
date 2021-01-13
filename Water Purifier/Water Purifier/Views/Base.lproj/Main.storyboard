@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L2v-Ca-rMD">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleccione un producto 💧" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzt-z9-EQc">
-                                <rect key="frame" x="12.5" y="108" width="389.5" height="70"/>
+                                <rect key="frame" x="12.666666666666657" y="108" width="389.33333333333337" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="zF5-Mf-yKj"/>
                                 </constraints>
@@ -106,7 +106,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2f-YS-qJN">
-                                <rect key="frame" x="264" y="409.5" width="100" height="100"/>
+                                <rect key="frame" x="264" y="409.66666666666669" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Iii-0D-5Xu"/>
@@ -122,7 +122,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCO-5U-hEX">
-                                <rect key="frame" x="264" y="585.5" width="100" height="100"/>
+                                <rect key="frame" x="264" y="585.66666666666663" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="B5o-0g-5F2"/>
@@ -282,28 +282,28 @@
                                 <rect key="frame" x="82" y="702" width="250" height="70"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8a-ss-IX5">
-                                        <rect key="frame" x="0.0" y="0.0" width="57.5" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="57.333333333333336" height="70"/>
                                         <state key="normal" title="10 Pesos" image="10pesos"/>
                                         <connections>
                                             <action selector="tenPesosCoinWasPressed:" destination="2Qp-UY-gRR" eventType="touchUpInside" id="ZtL-wA-4aB"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLp-rt-aWr">
-                                        <rect key="frame" x="64.5" y="0.0" width="57" height="70"/>
+                                        <rect key="frame" x="64.333333333333371" y="0.0" width="57.333333333333343" height="70"/>
                                         <state key="normal" title="Button" image="5pesos"/>
                                         <connections>
                                             <action selector="fivePesosCoinWasPressed:" destination="2Qp-UY-gRR" eventType="touchUpInside" id="pbJ-rZ-gmh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kS-Q0-cg3">
-                                        <rect key="frame" x="128.5" y="0.0" width="57.5" height="70"/>
+                                        <rect key="frame" x="128.66666666666674" y="0.0" width="57" height="70"/>
                                         <state key="normal" title="Button" image="2pesos"/>
                                         <connections>
                                             <action selector="twoPesosCoinWasPressed:" destination="2Qp-UY-gRR" eventType="touchUpInside" id="R6F-Q2-Oaa"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZc-TJ-hjk">
-                                        <rect key="frame" x="193" y="0.0" width="57" height="70"/>
+                                        <rect key="frame" x="192.66666666666652" y="0.0" width="57.333333333333343" height="70"/>
                                         <state key="normal" title="Button" image="1peso"/>
                                         <connections>
                                             <action selector="onePesoCoinWasPressed:" destination="2Qp-UY-gRR" eventType="touchUpInside" id="G8B-Qg-a4K"/>
@@ -366,13 +366,13 @@
                                 <rect key="frame" x="0.0" y="172" width="414" height="109"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voltee el envase para enguajarlo. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dN-vy-b9C">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="34.666666666666664"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="25"/>
                                         <color key="textColor" red="0.098483029139999997" green="0.089745077340000007" blue="0.75174599890000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presione OK cuando esté listo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfO-Td-BmB">
-                                        <rect key="frame" x="0.0" y="74.5" width="414" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="74.666666666666657" width="414" height="34.333333333333343"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="20"/>
                                         <color key="textColor" red="0.098483029139999997" green="0.089745077340000007" blue="0.75174599890000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -398,6 +398,9 @@
                                 <state key="normal" title="OK">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="okButtonWasPressed:" destination="hNv-pN-0kK" eventType="touchUpInside" id="Lvx-86-x0z"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="alJ-a6-yAM"/>
@@ -426,17 +429,76 @@
             </objects>
             <point key="canvasLocation" x="3328.985507246377" y="-263.16964285714283"/>
         </scene>
-        <!--View Controller-->
+        <!--PrepareVC-->
         <scene sceneID="m52-so-RE2">
             <objects>
-                <viewController id="C5K-Wq-48w" sceneMemberID="viewController">
+                <viewController id="C5K-Wq-48w" customClass="PrepareVC" customModule="Water_Purifier" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yXt-Rz-opG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="XOy-uT-V43">
+                                <rect key="frame" x="0.0" y="209" width="414" height="109"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coloque el envase para llenarlo. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bs8-ec-k2g">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="34.666666666666664"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="25"/>
+                                        <color key="textColor" red="0.098483029139999997" green="0.089745077340000007" blue="0.75174599890000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presione OK cuando esté listo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6E-iD-Kr4">
+                                        <rect key="frame" x="0.0" y="74.666666666666686" width="414" height="34.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" red="0.098483029139999997" green="0.089745077340000007" blue="0.75174599890000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="Kja-Uj-GFT"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garrafon-completo" translatesAutoresizingMaskIntoConstraints="NO" id="wJz-XF-UxM">
+                                <rect key="frame" x="131" y="431" width="152" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Hhv-g7-qxk"/>
+                                    <constraint firstAttribute="width" constant="152" id="bz0-wk-e7X"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2u-Z6-ovY">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.2214289606" green="0.4825823903" blue="0.73074275259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="d0g-ej-hqb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="LLENAR">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fillWasPressed:" destination="C5K-Wq-48w" eventType="touchUpInside" id="HZ8-Hh-IH1"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="WJn-bc-w29"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wJz-XF-UxM" firstAttribute="top" secondItem="XOy-uT-V43" secondAttribute="bottom" constant="113" id="Dfr-CG-oqO"/>
+                            <constraint firstItem="XOy-uT-V43" firstAttribute="top" secondItem="WJn-bc-w29" secondAttribute="top" constant="121" id="KS7-TH-eAJ"/>
+                            <constraint firstItem="G2u-Z6-ovY" firstAttribute="leading" secondItem="WJn-bc-w29" secondAttribute="leading" id="L5c-4B-qfn"/>
+                            <constraint firstItem="WJn-bc-w29" firstAttribute="bottom" secondItem="G2u-Z6-ovY" secondAttribute="bottom" id="Yv1-F3-vAz"/>
+                            <constraint firstItem="XOy-uT-V43" firstAttribute="centerX" secondItem="yXt-Rz-opG" secondAttribute="centerX" id="apM-cg-ZC5"/>
+                            <constraint firstItem="WJn-bc-w29" firstAttribute="trailing" secondItem="wJz-XF-UxM" secondAttribute="trailing" constant="131" id="dhb-HE-y46"/>
+                            <constraint firstItem="wJz-XF-UxM" firstAttribute="leading" secondItem="WJn-bc-w29" secondAttribute="leading" constant="131" id="hmN-Xk-Y7g"/>
+                            <constraint firstItem="WJn-bc-w29" firstAttribute="trailing" secondItem="G2u-Z6-ovY" secondAttribute="trailing" id="jSJ-3J-5KM"/>
+                            <constraint firstItem="XOy-uT-V43" firstAttribute="leading" secondItem="WJn-bc-w29" secondAttribute="leading" id="rqb-sg-RKW"/>
+                            <constraint firstItem="WJn-bc-w29" firstAttribute="trailing" secondItem="XOy-uT-V43" secondAttribute="trailing" id="v49-uH-ax6"/>
+                            <constraint firstItem="wJz-XF-UxM" firstAttribute="centerX" secondItem="yXt-Rz-opG" secondAttribute="centerX" id="xkZ-7O-ONL"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dGK-9c-9JV"/>
+                    <connections>
+                        <outlet property="productToFillImage" destination="wJz-XF-UxM" id="L8W-Ka-WFB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1QK-J8-wQl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -463,7 +525,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="iCg-is-J0z"/>
+        <segue reference="1RS-U4-7JK"/>
         <segue reference="Eys-tr-tq1"/>
     </inferredMetricsTieBreakers>
     <resources>

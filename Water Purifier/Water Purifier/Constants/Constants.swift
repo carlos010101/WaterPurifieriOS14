@@ -15,6 +15,8 @@ struct K {
         static let medioGarrafonSegue = "medioGarrafonSegue"
         static let botellaSegue = "botellaSegue"
         static let toCleanSegue = "toClean"
+        static let toFillFromCleanSegue = "toFillFromClean"
+        static let toFillSegue = "toFill"
 
     }
     

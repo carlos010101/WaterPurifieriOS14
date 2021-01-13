@@ -19,6 +19,7 @@
 		045F3A0525A79C1900AF1DD8 /* UIButtonExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F3A0425A79C1900AF1DD8 /* UIButtonExtention.swift */; };
 		046E015825AB69AA004132EA /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046E015725AB69AA004132EA /* ProductManager.swift */; };
 		047D613B25A810B700E6FCAD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D613A25A810B700E6FCAD /* Constants.swift */; };
+		049AA51125AFB3E400F8A72D /* PrepareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049AA51025AFB3E400F8A72D /* PrepareVC.swift */; };
 		04AD2F2325ACF0720027729D /* CleanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD2F2225ACF0720027729D /* CleanVC.swift */; };
 		04BB966625A90029001657B5 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB966525A90029001657B5 /* Product.swift */; };
 		04BB966B25A9062E001657B5 /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB966A25A9062E001657B5 /* PaymentVC.swift */; };
@@ -60,6 +61,7 @@
 		045F3A0425A79C1900AF1DD8 /* UIButtonExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtention.swift; sourceTree = "<group>"; };
 		046E015725AB69AA004132EA /* ProductManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
 		047D613A25A810B700E6FCAD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		049AA51025AFB3E400F8A72D /* PrepareVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareVC.swift; sourceTree = "<group>"; };
 		04AD2F2225ACF0720027729D /* CleanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanVC.swift; sourceTree = "<group>"; };
 		04BB966525A90029001657B5 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		04BB966A25A9062E001657B5 /* PaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
@@ -126,9 +128,9 @@
 				041E72C425AE60A00018F717 /* Enums */,
 				045F3A0325A79BF800AF1DD8 /* Extensions */,
 				047D613925A810A100E6FCAD /* Constants */,
-				04BB966425A90016001657B5 /* Model */,
-				045F39FB25A79BBE00AF1DD8 /* Controllers */,
+				04BB966425A90016001657B5 /* Models */,
 				045F3A0225A79BED00AF1DD8 /* Views */,
+				045F39FB25A79BBE00AF1DD8 /* Controllers */,
 				0439445C25A645D000299FDB /* Assets.xcassets */,
 				0439445E25A645D000299FDB /* LaunchScreen.storyboard */,
 				0439446125A645D000299FDB /* Info.plist */,
@@ -160,6 +162,7 @@
 				0439445725A645CF00299FDB /* SelectProductVC.swift */,
 				04BB966A25A9062E001657B5 /* PaymentVC.swift */,
 				04AD2F2225ACF0720027729D /* CleanVC.swift */,
+				049AA51025AFB3E400F8A72D /* PrepareVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -188,13 +191,13 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		04BB966425A90016001657B5 /* Model */ = {
+		04BB966425A90016001657B5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				04BB966525A90029001657B5 /* Product.swift */,
 				046E015725AB69AA004132EA /* ProductManager.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04AD2F2325ACF0720027729D /* CleanVC.swift in Sources */,
+				049AA51125AFB3E400F8A72D /* PrepareVC.swift in Sources */,
 				047D613B25A810B700E6FCAD /* Constants.swift in Sources */,
 				041E72C625AE60B80018F717 /* Enums.swift in Sources */,
 				0439445825A645CF00299FDB /* SelectProductVC.swift in Sources */,
