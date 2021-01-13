@@ -132,6 +132,10 @@ class PaymentVC: UIViewController {
             
             cleanVC.initProduct(product: self.product)
             
+        } else if let prepareVC = segue.destination as? PrepareVC {
+            
+            prepareVC.initProduct(product: product)
+            
         }
         
     }

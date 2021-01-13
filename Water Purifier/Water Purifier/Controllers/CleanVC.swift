@@ -62,7 +62,7 @@ class CleanVC: UIViewController {
         
         guard let prepareVC = segue.destination as? PrepareVC else { return }
         
-        prepareVC.initProduct(product: product)
+        prepareVC.initProduct(product: self.product)
         
     }
     
