@@ -33,7 +33,7 @@ class PrepareVC: UIViewController {
     
     @IBAction func fillWasPressed(_ sender: UIButton) {
         
-        print("Fill")
+        performSegue(withIdentifier: K.Segues.toFillProduct, sender: self)
         
     }
     
@@ -55,7 +55,13 @@ class PrepareVC: UIViewController {
         
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard let fillVC = segue.destination as? FillVC else { return }
+        
+        fillVC.initProduct(with: product)
+        
+    }
     
     
 }

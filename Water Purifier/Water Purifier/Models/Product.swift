@@ -16,22 +16,24 @@ struct Product {
     public var productCost : Double = 0.00
     public var productType : ProductType 
     
-    public var timeToFill : Double {
+    public var timeToFill : Int {
         
         switch productName {
         case "Garrafón completo":
-            return 60.00
+            return 60
             
         case  "Medio garrafón":
-            return 30.0
+            return 30
             
         case "Botella":
-            return 15.0
+            return 15
         
         default:
-            return 0.0
+            return 0
         }
         
     }
+    
+    
     
 }

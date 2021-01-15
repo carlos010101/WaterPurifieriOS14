@@ -17,6 +17,7 @@ struct K {
         static let toCleanSegue = "toClean"
         static let toFillFromCleanSegue = "toFillFromClean"
         static let toFillSegue = "toFill"
+        static let toFillProduct = "toFillProduct"
 
     }
     

@@ -19,6 +19,7 @@
 		045F3A0525A79C1900AF1DD8 /* UIButtonExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F3A0425A79C1900AF1DD8 /* UIButtonExtention.swift */; };
 		046E015825AB69AA004132EA /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046E015725AB69AA004132EA /* ProductManager.swift */; };
 		047D613B25A810B700E6FCAD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047D613A25A810B700E6FCAD /* Constants.swift */; };
+		04954CD825B1051B00712CB4 /* FillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04954CD725B1051B00712CB4 /* FillVC.swift */; };
 		049AA51125AFB3E400F8A72D /* PrepareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049AA51025AFB3E400F8A72D /* PrepareVC.swift */; };
 		04AD2F2325ACF0720027729D /* CleanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD2F2225ACF0720027729D /* CleanVC.swift */; };
 		04BB966625A90029001657B5 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB966525A90029001657B5 /* Product.swift */; };
@@ -61,6 +62,7 @@
 		045F3A0425A79C1900AF1DD8 /* UIButtonExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtention.swift; sourceTree = "<group>"; };
 		046E015725AB69AA004132EA /* ProductManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
 		047D613A25A810B700E6FCAD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		04954CD725B1051B00712CB4 /* FillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillVC.swift; sourceTree = "<group>"; };
 		049AA51025AFB3E400F8A72D /* PrepareVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareVC.swift; sourceTree = "<group>"; };
 		04AD2F2225ACF0720027729D /* CleanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanVC.swift; sourceTree = "<group>"; };
 		04BB966525A90029001657B5 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				04BB966A25A9062E001657B5 /* PaymentVC.swift */,
 				04AD2F2225ACF0720027729D /* CleanVC.swift */,
 				049AA51025AFB3E400F8A72D /* PrepareVC.swift */,
+				04954CD725B1051B00712CB4 /* FillVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				0439445825A645CF00299FDB /* SelectProductVC.swift in Sources */,
 				0439445425A645CF00299FDB /* AppDelegate.swift in Sources */,
 				046E015825AB69AA004132EA /* ProductManager.swift in Sources */,
+				04954CD825B1051B00712CB4 /* FillVC.swift in Sources */,
 				045F3A0525A79C1900AF1DD8 /* UIButtonExtention.swift in Sources */,
 				0439445625A645CF00299FDB /* SceneDelegate.swift in Sources */,
 				04BB966B25A9062E001657B5 /* PaymentVC.swift in Sources */,
