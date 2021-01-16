@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class FillVC: UIViewController {
     
@@ -22,6 +23,7 @@ class FillVC: UIViewController {
     private var timer = Timer()
     private var totalTime : Int?
     private var secondsPassed = 0
+    private var player : AVAudioPlayer!
     
     
     //MARK: - Lyfe Cycle
@@ -39,6 +41,7 @@ class FillVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        fill()
     }
     
     public func initProduct (with product : Product?) {
@@ -69,7 +72,34 @@ class FillVC: UIViewController {
     
     @objc private func updateTimer () {
         
+        if secondsPassed < totalTime ?? 0 {
+            secondsPassed += 1
+            progressBar.progress = Float(secondsPassed) / Float(totalTime!) //Progreso
+            print(Float(secondsPassed) / Float(totalTime!))
+            print(secondsPassed)
         
+        } else {
+            
+            timer.invalidate()
+            playSound()
+            thanksStack.isHidden = false
+            progressBar.isHidden = true
+            processLabel.text = "completado"
+            timer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false, block: { (timer) in
+                
+                self.navigationController?.popToRootViewController(animated: true)
+                
+            })
+            
+        }
+        
+    }
+    
+    private func playSound() {
+        
+        let url = Bundle.main.url(forResource: "bell", withExtension: "wav")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
         
     }
 

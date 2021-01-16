@@ -36,9 +36,9 @@ class PaymentVC: UIViewController {
         navigationItem.backBarButtonItem?.title = "Regresar"
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.isNavigationBarHidden = true
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        self.navigationItem.hidesBackButton = true
     }
     
     
