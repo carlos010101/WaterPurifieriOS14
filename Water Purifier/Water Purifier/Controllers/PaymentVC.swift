@@ -36,10 +36,6 @@ class PaymentVC: UIViewController {
         navigationItem.backBarButtonItem?.title = "Regresar"
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        self.navigationItem.hidesBackButton = true
-    }
     
     
     //MARK: - Actions
@@ -84,7 +80,7 @@ class PaymentVC: UIViewController {
     }
     
     
-    //MARK: - PaymentVC Methods
+    //MARK: - Methods
     
     public func initProduct(with product : Product?) {
         

@@ -2,7 +2,7 @@
 //  FillVC.swift
 //  Water Purifier
 //
-//  Created by mac on 14/01/21.
+//  Created by Carlos Hernández Vázquez
 //
 
 import UIKit
@@ -31,7 +31,6 @@ class FillVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -43,6 +42,8 @@ class FillVC: UIViewController {
         super.viewDidAppear(animated)
         fill()
     }
+
+    //MARK: - Methods
     
     public func initProduct (with product : Product?) {
         
@@ -61,6 +62,7 @@ class FillVC: UIViewController {
         self.thanksStack.isHidden = true
         self.timer.invalidate()
         self.progressBar.progress = 0.0
+        self.navigationItem.hidesBackButton = true
         
     }
     

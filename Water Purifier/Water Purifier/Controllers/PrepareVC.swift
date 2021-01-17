@@ -52,6 +52,7 @@ class PrepareVC: UIViewController {
         guard let selectedProduct = product else { return }
         
         self.productToFillImage.image = selectedProduct.productImage
+        self.navigationItem.hidesBackButton = true
         
     }
     

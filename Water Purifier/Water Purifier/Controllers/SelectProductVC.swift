@@ -25,9 +25,11 @@ class SelectProductVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBarItem.title = "Purificadora"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         textAnimated()
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -36,11 +38,12 @@ class SelectProductVC: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let paymentVC = segue.destination as? PaymentVC {
+        
+        guard let paymentVC = segue.destination as? PaymentVC else { return }
             
             paymentVC.initProduct(with: product)
             
-        }
+        
     }
     
     //MARK: - Actions

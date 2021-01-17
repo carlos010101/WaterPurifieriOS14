@@ -27,9 +27,9 @@ class CleanVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         flipImage(product: product)
-
     }
     
+    //MARK: - Actions
     
     @IBAction func okButtonWasPressed(_ sender: UIButton) {
         
@@ -54,7 +54,7 @@ class CleanVC: UIViewController {
         
         self.productImage.image = selectedProduct.productImage
         self.productImage.transform = CGAffineTransform(rotationAngle: (180.0 * .pi) / 180.0)
-        
+        self.navigationItem.hidesBackButton = true
         
     }
     
